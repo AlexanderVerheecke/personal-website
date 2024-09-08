@@ -1,0 +1,69 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between; // Distribute space between items
+  align-items: center; // Center items vertically
+  padding: 1rem; // Optional: Add padding
+  position: relative; // Ensure side menu is positioned correctly
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -40%; // Hide off-screen initially
+  width: 40%;
+  height: 100vh; // Full viewport height
+  background-color: #242424; // Black background
+  color: white; // Text color for better contrast
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); // Optional: Shadow for visual effect
+  transition: right 0.3s ease; // Smooth transition for sliding effect
+  z-index: 1000; // Ensure it's above other content
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem; // Optional: Padding from top
+}
+
+.side-menu.open {
+  right: 0; // Slide in when open
+}
+
+.side-menu ul {
+  list-style-type: none; // Remove default list styles
+  padding: 0; // Remove default padding
+  margin: 0; // Remove default margin
+  width: 100%; // Full width for better alignment
+}
+
+.side-menu li {
+  padding: 1rem; // Space around each item
+  cursor: pointer; // Add pointer cursor to indicate clickable items
+  transition: color 0.3s; // Optional: Smooth color transition on hover
+  text-align: center; // Center text
+  color: white; // Text color
+}
+
+.side-menu li:hover {
+  color: #007bff; // Optional: Change color on hover
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem; // Space from the top of the sidebar
+  right: 50%; // Align horizontally to the center
+  transform: translate(50%, 0); // Adjust for centering horizontally
+  cursor: pointer; // Add pointer cursor to indicate clickable icon
+  color: white; // Text color for better contrast
+}
+
+.menu-icon {
+  cursor: pointer; // Add pointer cursor to indicate clickable icon
+  color: #333; // Default color for the menu icon
+  transition: color 0.3s; // Optional: Smooth color transition
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; // Show the menu icon on small screens
+  }
+}

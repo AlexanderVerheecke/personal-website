@@ -1,0 +1,114 @@
+.employment-card {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.card-header {
+  padding: 16px 16px 0px 16px;
+  color: black;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 8px 0 0;
+}
+
+.card-content {
+  padding: 16px;
+  color: black;
+}
+
+.job-description {
+  margin-bottom: 16px;
+}
+
+.achievement-skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 220px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle-button:hover {
+  background-color: #2b2929;
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.down {
+  transform: rotate(90deg);
+}
+
+.achievements-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.skills_employment .skill-tag {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .achievement-skills-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .achievements-list {
+    margin-bottom: 0;
+  }
+
+  // .skills_employment {
+  //   margin-top: 16px;
+  // }
+
+  .achievements-and-skills {
+    display: flex;
+    flex-direction: column;
+  }
+}

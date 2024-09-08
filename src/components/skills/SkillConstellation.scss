@@ -1,0 +1,60 @@
+.constellation-container {
+  background-color: #000033;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.constellation-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.night-sky {
+  position: relative;
+  height: 80vh;
+}
+
+.constellation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star-name {
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  white-space: nowrap;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.star:hover .star-name {
+  opacity: 1;
+}
+
+.constellation-name {
+  position: absolute;
+  color: #add8e6;
+  font-size: 18px;
+  font-weight: bold;
+}
