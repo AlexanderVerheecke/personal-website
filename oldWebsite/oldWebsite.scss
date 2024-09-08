@@ -1,0 +1,535 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+//     font-family:  'Poppoms', sans-serif;
+//     box-sizing: border-box;
+// }
+
+.oldWebsite-body {
+  background: #080808;
+  color: #fff;
+}
+
+.oldWebsite-html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* background-image: url(images/website_background_cleaned.png); */
+  background-size: cover;
+  background-position: center;
+}
+
+#_Home,
+#_About,
+#_Portfolio,
+#_Contact {
+  font-size: 18px;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex; /* so image and links side-by-side */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul li {
+  display: inline-block; /*  so horizontally aligned */
+  list-style: none;
+  margin: 10px 20px; /*  space between links */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative; /* because abolute in :after */
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #3a65ed;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span#_Name {
+  color: #d12612;
+}
+
+/* ------------CSS for the about me section------------ */
+#about {
+  padding: 40px 0;
+  color: #ababab;
+}
+.row {
+  /* display: flex -> get image and text side by side */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%; /*  width of column set to 35% of page width*/
+}
+
+.about-col-1 img {
+  width: 125%;
+  border-radius: 200px;
+}
+
+.about-col-2 {
+  flex-basis: 50%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.about-me-text {
+  font-size: 16px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #3a65ed;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #3a65ed;
+  font-size: 14px;
+}
+
+.tab-contents {
+  /*  This hides all the content of tab-contens 
+    so it can later be shown when section is chosen*/
+  display: none;
+}
+
+.tab-contents.active-tab {
+  /*  This displays the eduction tab automatically, 
+    will change when other section is selected*/
+  display: block;
+}
+
+/* ------------- Portfolio ------------- */
+#portfolio {
+  padding: 50px 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  /* transition: transform 0.5s; */
+}
+
+.layer {
+  /* uncomment commented out for gradient colour and center text */
+  width: 100%;
+  /* height: 0; */
+  height: 100%;
+  /* background: linear-gradient(rgba(0,0,0,0.6), #3a65ed); */
+  border-radius: 10px;
+  /* position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s; */
+}
+
+/* .work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+} */
+
+/* .Twitter{
+    margin-top: 10px;
+    color: #3a65ed
+} */
+
+/* this does same as .Twitter  */
+.layer h3 {
+  color: #3a65ed;
+  margin: 10px;
+}
+.layer p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.layer a {
+  margin: 10px;
+  color: #3a65ed;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 50px;
+  /* background: white; */
+  /* width: 20px; */
+  /* height: 20px; */
+  /* border-radius: 00px; */
+  text-align: center;
+  /* transition: height 0.5s; */
+}
+
+.btn {
+  display: none;
+}
+
+.icon {
+  margin-left: 50px;
+  /* color: #3a65ed; */
+  /* text-decoration: none; */
+  font-size: 22px;
+  /* line-height: 50px;  */
+  /* background: white; */
+  /* width: 20px; */
+  /* height: 20px; */
+  /* border-radius: 20px; */
+  text-align: left;
+  transition: transform 0.5s;
+  display: block;
+}
+
+.icon:hover {
+  transform: scale(1.8);
+}
+
+/* -------- contact ----------- */
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+  /* margin-left:px */
+}
+
+.contact-left .emailIcon {
+  margin-right: 10px;
+}
+
+.contact-left p i {
+  color: #3a65ed;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+  margin-left: 10px;
+  /* left: 30; */
+}
+
+/* .social-icons a{ */
+/* margin-left: 40px; */
+/* content: "nice"; */
+/* } */
+.social-icons a {
+  /* margin-left: 40px; */
+  margin-right: 10px;
+  color: gray;
+  text-decoration: none;
+  font-size: 30px;
+  /* line-height: 50px;  */
+  /* background: white; */
+  /* width: 20px; */
+  /* height: 20px; */
+  /* border-radius: 00px; */
+  /* text-align: center; */
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #3a65ed;
+  transform: translateY(-5px); /* when hovered, move icon up by -5px */
+}
+
+.button {
+  display: inline-block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #3a65ed;
+  padding: 14px 50px;
+  background: #3a65ed;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  /* transition: background 0.5s; */
+}
+/* .button{
+    display: inline-block;
+    background: ;
+} */
+/* .button:hover{
+    background: #3a65ed;
+} */
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #3a65ed;
+}
+
+/* ------------- css adaptive screen size -------- */
+
+nav .fa-sharp,
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* #header{
+        background-image: url(images/me_mobile_format2.png);
+    } */
+  .header-text {
+    /* margin-left: -10px; */
+    margin-top: 25%;
+    font-size: 16px;
+    width: 100%;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fa-sharp,
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #3a65ed;
+    position: fixed;
+    top: 0;
+    right: -240px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    /* z-index specifes stack order of element, element with greater
+        stack order will be in front of element of lower stack order */
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-sharp,
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /* comment out for orignal X position */
+  nav ul .fa-solid {
+    margin-left: 100px;
+    margin-top: 15px;
+  }
+
+  /* About Me */
+  /* My Work */
+  /* Contact Me */
+  .about-me {
+    /* About Me */
+    font-size: 40px;
+  }
+
+  .My-work {
+    /* My Work */
+    font-size: 40px;
+  }
+  .contact-me {
+    /* Contact Me */
+    font-size: 40px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 80%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-2 {
+    font-size: 14px;
+  }
+
+  .about-me-text {
+    font-size: 14px;
+
+    /* comment out if want to go back to asymmetric about me on mobile */
+    margin-right: -60px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  /* .contact-left p{
+        margin-top: 30px;
+        margin-left:30px
+    }
+    
+    .contact-left .emailIcon{
+        margin-right: 10px;
+    }
+    
+    .contact-left p i{
+        color: #3a65ed;
+        margin: 10px;
+        font-size: 25px;
+    } */
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+
+.language {
+  /* background: #262626; */
+  /* background: #3a65ed; */
+  /* background: #D12612; */
+  margin-left: 15px;
+  background: #3a65ed;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+.NEW-WEBSITE {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  // width: max-content;
+  margin: 200px 0px;
+
+  button {
+    width: max-content;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    background-color: crimson;
+    font-size: 48px;
+    padding: 10px 20px;
+    height: max-content;
+    color: white;
+  }
+}
