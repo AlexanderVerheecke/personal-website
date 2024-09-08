@@ -21,9 +21,12 @@ const Employment = () => {
   }, []);
 
   const achievements = [
-    "Implemented a new feature that increased user engagement by 25%",
-    "Optimized database queries, reducing load times by 40%",
-    "Led a team in successfully migrating a legacy system to a modern tech stack",
+    "Automated data processing workflows cutting processing time by 70%",
+    "Engineered a user-friendly data submission portal resulting in a 50% decrease in user-reported isses",
+    "Developed interactive geographical data visualisations, icnreasing user engagement by 25%",
+    "Architected a WCAG 2.1 AA-compliant responsive frontend improving accessibiliy across the board",
+    "Improved scalabale backend, implementing robust user authentication and data encryption",
+    "Implemented comprehensive testing strategy, including unit, integration, and E2E tests, reducing critical bugs by 75%",
   ];
 
   const employmentSkills = [

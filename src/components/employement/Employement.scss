@@ -77,12 +77,13 @@
 
 .achievement-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 8px;
 }
 
 .icon {
   margin-right: 8px;
+  flex-shrink: 0; // Prevent the icon from shrinking
 }
 
 .skills_employment .skill-tag {
