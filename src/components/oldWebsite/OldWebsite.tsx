@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const OldWebsite: React.FC = () => {
   return (
@@ -11,9 +10,6 @@ const OldWebsite: React.FC = () => {
         frameBorder="0"
         style={{ width: "100%", height: "100vh" }}
       ></iframe>
-      {/* <button>
-        <Link to="/">Back to new website</Link>
-      </button> */}
     </div>
   );
 };

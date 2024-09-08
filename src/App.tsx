@@ -5,7 +5,7 @@ import Contact from "./components/contact/Contact";
 import Employment from "./components/employement/Employement";
 import Skills from "./components/skills/Skills";
 import { ColorProvider } from "./ColorContext";
-import NavBar from "./components/navbar/NavBar";
+// import NavBar from "./components/navbar/NavBar";
 // import SkillConstellation from "./components/skills/SkillConstellation";
 // import SkillTree from "./components/skills/SkillTree";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

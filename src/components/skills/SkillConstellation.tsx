@@ -1,5 +1,4 @@
-import React from 'react';
-import './SkillConstellation.scss';
+import "./SkillConstellation.scss";
 
 const SkillConstellation = () => {
   const skillCategories = [
@@ -36,15 +35,11 @@ const SkillConstellation = () => {
     },
     {
       category: "Version Control",
-      skills: [
-        { name: "Git", level: 0.9 },
-      ],
+      skills: [{ name: "Git", level: 0.9 }],
     },
     {
       category: "Cloud Computing",
-      skills: [
-        { name: "AWS", level: 0.7 },
-      ],
+      skills: [{ name: "AWS", level: 0.7 }],
     },
   ];
 

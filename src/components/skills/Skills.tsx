@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useColor } from "../../ColorContext";
 import "./Skills.scss";
 
@@ -20,7 +20,7 @@ const Skills = () => {
   const [positions, setPositions] = useState<{ top: string; left: string }[]>(
     []
   );
-  const [hasRendered, setHasRendered] = useState(false);
+  const [, setHasRendered] = useState(false);
 
   const [chipSize, setChipSize] = useState(150);
   const [margin, setMargin] = useState(30);

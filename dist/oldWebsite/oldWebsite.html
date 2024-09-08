@@ -1,0 +1,405 @@
+
+<!-- When changing the langauge, it sets the angaueg correctly but the links and the unferlinefor the top menu are broken --->
+<html class="oldWebsite-html">
+    <head>
+        <script defer data-domain="alexverheecke.com" src="https://plausible.io/js/plausible.js"></script>  <!-- to track how many unique visitors -->
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Alexander Verheecke</title>
+        <link rel="stylesheet" href="/oldWebsite/oldWebsite.scss">
+        
+        <!-- This is the script to fontawseome to get nice icons later -->
+        <script src="https://kit.fontawesome.com/d1d65dc915.js" crossorigin="anonymous"></script>
+
+        <script>
+            function navigateToNewWebsite() {
+              if (window.top) {
+                window.top.location.href = '/';
+              } else {
+                window.location.href = '/';
+              }
+            }
+          </script>
+          
+
+
+    </head>
+    <body class="oldWebsite-body">
+        <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="/oldWebsite/agreed_logo_FINAL.png" class="logo" width="20%">
+                <ul id="sidemenu">
+                    <li id="_Home"><a href="#header">Home</a> </li>
+                    <li id="_About"><a href="#about">About</a> </li>
+
+                    <li id="_Portfolio"><a href="#portfolio">Portfolio</a> </li>
+                    <li id="_Contact"><a href="#contact">Contact</a> </li>
+
+                        <select id="language" class="language"> -->
+                            <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
+                            <option>🇩🇪 DE</option> 
+                            <option>🇫🇷 FR</option> 
+                            <option>🇱🇺 LUX</option> 
+                        </select>
+                    <li class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+                
+            </nav>
+            <!--  -->
+            <div class="NEW-WEBSITE">
+                <button onclick="navigateToNewWebsite()">Back to new website</button>
+            </div>
+            <!--  -->
+            <div class="header-text">
+                <p id="_RecentGrad"> Recent graduate & aspiring developer</p>
+                <h1> <span id="_Hello"> Hi, I'm </span> <span id="_Name"> Alex Verheecke </span> <br> <span id="_Country"> from Luxembourg </span> </h1>
+            </div>
+        </div>
+        <!-- -------------about me section------------- -->
+        <div id="about">
+            <div class="container">
+                <!-- we want to create two columns, so we create a div row , then create two dives for columns-->
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="../oldWebsite/me_waterfall_background_lightGray.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 id="_about-me" class="about-me">About Me</h1>
+                        <p id="_about-me-text" class="about-me-text"> 
+                            I moved from Luxembourg to England in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
+                            During the lockdown in March 2020, I began my programming journey with the University of Helsinki's Java Programming MOOC.
+                            After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. 
+                            I conducted my final postgraduate research project on the influence of machine translation on sentiment. 
+                            I am now actively searching for a job in Software Development in Leeds.
+                            As I have a Luxembourgish and British dual citizenship, I am not required to have a work visa in the UK.
+                        </p>
+                        <div class="tab-titles">
+                    <!-- onclick event makes it so that an event happens when the user clicks. Currently Education automatically shown.
+                    When another section is clicked, that section will be shown.
+                    Function: onclick="opentab('ID of tab')"" -->
+
+                            <p id="_Education" class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p id="_Skills" class="tab-links" onclick="opentab('Other')" >Skills</p>
+                            <!-- <p class="tab-links" onclick="opentab('XYZ')">XYZ</p> -->
+                        </div>
+
+                        <div class="tab-contents active-tab" id="Education">
+                            <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
+                            <ul>
+                                <li id="_Master"><span>2021-22</span><br><p id="_Master-details">MSc Computer Science - University of Birmingham</p></li>
+                                <li id="_BA"><span>2018-21</span><br> <p id="_BA-details">BA (Hons) English Language and Linguistics - University of York </p></li>
+                                <li id="_Secondary"><span>2016-18</span><br> <p id="_Secondary-details">Secondary Education - Advanced Level - Luxembourg </p></li>
+                                <li id="_Civil"><span>2013-16</span><br> <p id="_Civil-details">Technician in civil engineering - Luxembourg </p></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="Other">
+                            <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
+                            <ul>
+                                <li><span id="_Programming"> Programming</span><br> <p id="_Programming-details">Java, Python 3, LaTeX, SQL, HTML, CSS </p></li>
+                                <li><span id="_Linguistics">Linguistics</span><br> <p id="_Linguistics-details">Luxembourgish, English, German, French </p> </li>
+                                <li><span id="_Technical">Technical Competencies</span><br> <p id="_Technical-details">JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode </p></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------- Portfolio ------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 id="_My-work" class="My-work">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/oldWebsite/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3 id="_Twitter" class="Twitter">Twitter Sentiment Analysis </h3>
+                            <p id="_Twitter-App-Explanation">This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag-related tweets.</p>
+                            <a href="https://twittersentiment.streamlitapp.com/" class="icon" ><i class="fa-regular fa-square-up-right"></i></a>
+
+                        </div>
+                    </div>
+                    <!-- <div class="work">
+                        <img src="images/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3>Twitter Sentiment Analysis</h3>
+                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.</p>
+                            <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/"class="testicon"><i class="fa-regular fa-square-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3>Twitter Sentiment Analysis</h3>
+                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.</p>
+                            <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/"class="testicon"><i class="fa-regular fa-square-up-right"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/" class="testicon"><i class="fa-regular fa-square-up-right"></i></a> -->
+                <a href="#" class="btn">See more</a>
+
+            </div>
+        </div>
+
+<!-- ---------------- contact ----------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 id="_contact-me" class="contact-me">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> alexander.verheecke@hotmail.com</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/verheecke/" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AlexanderVerheecke" ><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a id="_Download" href="./Alexander_Verheecke_CV.pdf" download class="button">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <!-- form creates a form fiels -->
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Text" rows="8" placeholder="Text" required></textarea>
+                    <button id="_Submit" type="submit" class="button">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+        <!--  ADDING JAVASCRIPT: so the onclick function works-->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            // defining function opentab
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link"); // this will remove the active-link class of every active tab 
+                }
+            
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab"); // this will remove the active-tab class of every active tab 
+                }
+
+                // on event of clicking the current target tab, we add the tabname's active-tab to the list to be shown
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                // whenever rifht is 0, it will be visible
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiQHatAiw9l5eatpFiSaplAxyUytuyvuCuQMHdvR7_WAk0zqpPquIguWCmOEbE_PFK4w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your message has been send successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<!-- --------- Language change ------- -->
+
+<script>
+    const jsonDE = {
+    "_Home": "<a href=\"#header\">Startseite</a>",
+    "_About": "<a href=\"#about\">Über mich</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Kontakt</a>",
+    "_RecentGrad": "Hochschulabsolvent & angehender Entwickler",
+    "_Hello": "Hallo, ich bin ",
+    "_Name": "Alex Verheecke",
+    "_Country" :"von Luxemburg",
+    "_about-me": "Über mich",
+    "_about-me-text": "2018 bin ich von Luxemburg nach England umgezogen, um einen Bachelorabschluss in der Englischen Sprache und Linguistik zu studieren. Während des Lockdowns im März 2020 begann ich meine Reise in die Programmierung mit dem Java Programming MOOC der Universität von of Helsinki. Nach meinem Abschluss setzte ich meine Ausbildung an der Universität von Birmingham fort und absolvierte einen Masterabschluss in den Computerwissenschaften. Derzeit schreibe ich an meiner Dissertation über den Einfluss der maschinellen Übersetzung auf die Stimmung eines Textes. Ich bin jetzt aktiv auf der Suche nach einem Job im Bereich Softwareentwicklung in Leeds. Aufgrund meiner doppelten Staatsangehörigkeit benötige ich kein Arbeitsvisum für das Vereinigte Königreich.",
+    "_Education": "Ausbildung",
+    "_Skills": "Kompetenzen",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computerwissenschaft - Universität von Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) Englische Sprache and Linguistik - Universität von York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Sekundarschulbildung - Fortgeschrittene Stufe - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Techniker im Bauwesen - Luxembourg",
+    "_Programming":"Programmierung",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Sprachenkenntnisse",
+    "_Linguistics-details": "Luxemburgisch, Englisch, Deutsch, Französisch",
+    "_Technical": "Technische Kompetenzen",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Meine Projekte",
+    "_Twitter": "Twitter Stimmungsanalyse",
+    "_Twitter-App-Explanation": "Diese Webanwendung ermöglicht die Analyse der negativen, neutralen und positiven Meinungen von Tweets.",
+    "_contact-me": "Kontaktaufnahme",
+    "_Download": "Lebenslauf herunterladen",
+    "_Submit": "Senden"
+}
+
+const jsonLUX = {
+    "_Home": "<a href=\"#header\">Startsäit</a>",
+    "_About": "<a href=\"#about\">Iwwert mech</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Kontakt</a>",
+    "_RecentGrad": "Rezent Graduéierten & Aspirant Entwéckler",
+    "_Hello": "Moien, ech sinn den",
+    "_Name": "Alex Verheecke",
+    "_Country" :"vu Lëtzebuerg",
+    "_about-me": "Iweert mech",
+    "_about-me-text": "Ech sinn 2018 vu Lëtzebuerg op England geplënnert fir en Bachelor an der Englescher Sprooch a Linguistik ze studéieren. Wärend dem Lockdown am Mäerz 2020 hunn ech meng Rees an der Programméierung mam Java Programming MOOC vun der Universitéit vu Helsinki ugefaangen. Nom mengem Bachelorofschloss hunn ech meng Ausbildung op der Universiteit vu Birmingham fortgesat an e Master an der Computerwëssenschaft ofgeschloss. Ech hunn meng Masteraarbecht iwwer den Afloss vun der Maschinn Iwwersetzung op d'Emotiounen vum Text gemaach. Ech sichen elo aktiv no enger Aarbecht an der Software Entwécklung zu Leeds. Duerch meng duebelt Nationalitéit brauch ech keen Aarbechts Visa fir an England ze schaffen.",
+    "_Education": "Ausbildung",
+    "_Skills": "Kompetenzen",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computerwëssenschaft - Universitéit vu Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons)Englesch Sprooch a Linguistik - Universitéit vu York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Enseignement secondaire général  - Lëtzebuerg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Techniker am Déifbau - Lëtzebuerg",
+    "_Programming":"Programméierung",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Sproochleche Kompetenzen",
+    "_Linguistics-details": "Lëtzebuergesch, Englesch, Däitsch, Franséisch",
+    "_Technical": "Technesch Kompetenzen",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Meng Projeten",
+    "_Twitter": "Twitter Stëmmung Analyse",
+    "_Twitter-App-Explanation": "Mat dëser Webapplikatioun kann een d'negativ, neutral a positiv Meenungen vu Tweets analyséieren.",
+    "_contact-me": "Kontaktéier mech",
+    "_Download": "Liewenslaf eroflueden",
+    "_Submit": "Schécken"
+}
+
+const jsonEN = {
+    "_Home": "<a href=\"#header\">Home</a>",
+    "_About": "<a href=\"#about\">About</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Contact</a>",
+    "_RecentGrad": "Recent graduate & aspiring developer",
+    "_Hello": "Hi, I'm",
+    "_Name": "Alex Verheecke",
+    "_Country" :"from Luxembourg",
+    "_about-me": "About Me",
+    "_about-me-text": "I moved from Luxembourg to England in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my programming journey with the University of Helsinki's Java Programming MOOC. After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. I conducted my final postgraduate research project on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development in Leeds. As I have a Luxembourgish and British dual citizenship, I am not required to have a work visa in the UK.",
+    "_Education": "Education",
+    "_Skills": "Skills",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computer Science - Univeristy of Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) English Language and Linguistics - University of York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Secondary Education - Advanced Level - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Technician in civil engineering - Luxembourg",
+    "_Programming":"Programming",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Linguistics",
+    "_Linguistics-details": "Luxembourgish, English, German, French ",
+    "_Technical": "Technical Competencies",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "My Work",
+    "_Twitter": "Twitter Sentiment Analysis",
+    "_Twitter-App-Explanation": "This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.",
+    "_contact-me": "Conact me",
+    "_Download": "Download CV",
+    "_Submit": "Submit"
+}
+
+
+const jsonFR = {
+    "_Home": "<a href=\"#header\">Page d'accueil</a>",
+    "_About": "<a href=\"#about\">Sur moi</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Prendre contact</a>",
+    "_RecentGrad": "Diplômé et aspirant développeur",
+    "_Hello": "Bonjour, je m'appelle",
+    "_Name": "Alex Verheecke",
+    "_Country" :"et je viens du Luxembourg.",
+    "_about-me": "Sur moi",
+    "_about-me-text": "J'ai déménagé du Luxembourg en Angleterre en 2018 pour poursuivre un diplôme de premier cycle en langue anglaise et en linguistique. Pendant le confinement de mars 2020, j'ai commencé mon parcours de programmation avec le MOOC de programmation Java de l'Université d'Helsinki. Après avoir obtenu mon diplôme, j'ai poursuivi mes études à l'Université de Birmingham et entrepris un cours d'informatique de deuxième cycle. J'ai mené mon projet de recherche de deuxième cycle sur l'influence de la traduction automatique sur le sentiment. Je suis maintenant à la recherche active d'un emploi dans le domaine du développement logiciel en Leeds.  Je n'ai pas besoin d'un visa de travail pour le Royaume-Uni.",
+    "_Education": "Éducation",
+    "_Skills": "Compétences",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Sciences informatiques - Université de Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) Langue anglaise et linguistique - Université de York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Enseignement secondaire - Niveau avancé - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Technicien en génie civil - Luxembourg",
+    "_Programming":"Programmation",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Linguistique",
+    "_Linguistics-details": "Luxembourgish, English, German, French ",
+    "_Technical": "Compétences techniques",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Mes oeuvres",
+    "_Twitter": "Analyse du sentiment sur Twitter",
+    "_Twitter-App-Explanation": "Cette application web permet d'analyser les sentiments négatifs, neutres et positifs des récents tweets liés à un hashtag.",
+    "_contact-me": "Contactez-moi",
+    "_Download": "Télécharger mon CV",
+    "_Submit": "Envoyer"
+}
+
+document.querySelector('#language').addEventListener("change", function() {
+  if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
+    // change all text to ENG
+    for (let key in jsonEN) {
+      document.querySelector("#" + key).innerHTML = jsonEN[key]
+    }
+  } else if (this.value == "🇩🇪 DE") {
+    // change all text to DE
+    for (let key in jsonDE) {
+      document.querySelector("#" + key).innerHTML = jsonDE[key]
+    }
+} else if (this.value == "🇱🇺 LUX") {
+    // change all text to LUX
+    for (let key in jsonLUX) {
+      document.querySelector("#" + key).innerHTML = jsonLUX[key]
+    }
+} 
+else if (this.value == "🇫🇷 FR") {
+    // change all text to FR
+    for (let key in jsonFR) {
+      document.querySelector("#" + key).innerHTML = jsonFR[key]
+    }
+}
+});
+    </script>    
+    </body>
+</html>

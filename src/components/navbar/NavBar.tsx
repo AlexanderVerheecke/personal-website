@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./NavBar.scss";
 import { useColor } from "../../ColorContext";
 import { Menu, X } from "lucide-react";
