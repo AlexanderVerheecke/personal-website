@@ -5,7 +5,7 @@ const OldWebsite: React.FC = () => {
     <div className="old-website">
       {/* Use iframe to include the old HTML */}
       <iframe
-        src="/oldWebsite/oldWebsite.html"
+        src="/old-website/index.html"
         title="Old Website"
         frameBorder="0"
         style={{ width: "100%", height: "100vh" }}
