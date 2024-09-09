@@ -20,7 +20,7 @@ const Skills = () => {
   const [positions, setPositions] = useState<{ top: string; left: string }[]>(
     []
   );
-  const [, setHasRendered] = useState(false);
+  const [isPositioned, setIsPositioned] = useState(false);
 
   const [chipSize, setChipSize] = useState(150);
   const [margin, setMargin] = useState(30);
@@ -119,6 +119,7 @@ const Skills = () => {
       });
 
       setPositions(newPositions);
+      setIsPositioned(true);
     }
   }, [isSmallScreen, margin]);
 
@@ -142,8 +143,10 @@ const Skills = () => {
   // Run calculatePositions on render and dependency change
   useEffect(() => {
     if (!isSmallScreen) {
+      setIsPositioned(false);
       debouncedCalculatePositions();
-      setHasRendered(true);
+    } else {
+      setIsPositioned(true);
     }
   }, [debouncedCalculatePositions, chipSize, isSmallScreen]);
 
@@ -184,7 +187,7 @@ const Skills = () => {
         {skillCategories.map((category, index) => (
           <div
             key={index}
-            className="skill-chip"
+            className={`skill-chip ${isPositioned ? "visible" : ""}`}
             style={{
               position: isSmallScreen ? "relative" : "absolute",
               top: !isSmallScreen ? positions[index]?.top || "0px" : "auto",
@@ -192,6 +195,8 @@ const Skills = () => {
               width: isSmallScreen ? `${chipSize}px` : "max-content",
               boxShadow: `0 0 10px rgba(${hexToRgb(currentColor)}, 0.5)`,
               margin: isSmallScreen ? `${margin / 2}px` : 0,
+              opacity: isPositioned ? 1 : 0,
+              transition: "opacity 0.3s ease-in-out",
             }}
           >
             <h3 className="skill-chip-title">{category.category}</h3>
