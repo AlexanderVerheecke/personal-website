@@ -34,6 +34,7 @@
 
 .job-description {
   margin-bottom: 16px;
+  font-size: 18px;
 }
 
 .achievement-skills-container {
@@ -111,5 +112,11 @@
   .achievements-and-skills {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .card-subtitle,
+  .job-description {
+    font-size: 1rem;
   }
 }
