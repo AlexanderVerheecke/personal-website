@@ -54,9 +54,10 @@ const About: React.FC = () => {
         </h1>
         <div className="about-description">
           <p>
-            a software developer from the UK. Lover of all things diving, travelling, and
-            the oxford comma. I work at scottlogic where I currently spend most
-            of my time building tools for visual data management.
+            a software developer from the UK. Lover of all things diving,
+            travelling, and the oxford comma. I work at Scott Logic where I
+            currently spend most of my time building tools for visual data
+            management.
           </p>
           <p>
             Some projects I've worked on include:
