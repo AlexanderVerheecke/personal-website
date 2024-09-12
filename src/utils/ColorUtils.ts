@@ -20,7 +20,7 @@ export const getColorForLanguage = (language: string): string => {
       return "#e99c0e";
     case "java":
       return "#B93776";
-    case "django":
+    case "flask":
       return "#092E20";
     default:
       return "#333"; // Default color for unknown languages

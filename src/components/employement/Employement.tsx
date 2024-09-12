@@ -20,18 +20,25 @@ const Employment = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  const jobDescription = `
+  I am responsible for designing, developing, 
+  and testing software components, ensuring high-quality code and adherence to best 
+  practices. My role encompasses full-stack development, data engineering, and process 
+  automation across various client projects.
+`;
+
   const achievements = [
     "Cut data processing time 70% via automated workflows",
     "Halved user issues with streamlined data submission portal",
     "Boosted user engagement 25% through interactive visualizations",
     "Reduced critical bugs 75% with comprehensive testing",
     "Enhanced accessibility with WCAG 2.1 AA-compliant responsive frontend",
-    "Scaled backend with robust auth and encryption",
+    "Led an initiative to standardize project documentation, reducing workflow clarification time by approximately 50%",
   ];
 
   const employmentSkills = [
     "Python",
-    "Django",
+    "Flask",
     "Jupyter",
     "React",
     "TypeScript",
@@ -53,11 +60,7 @@ const Employment = () => {
         </p>
       </div>
       <div className="card-content">
-        <p className="job-description">
-          I am responsible for designing, developing, and testing software
-          components, ensuring high-quality code and adherence to best
-          practices.
-        </p>
+        <p className="job-description">{jobDescription}</p>
         <div className="achievement-skills-container">
           <button
             onClick={() => setShowAchievements(!showAchievements)}
