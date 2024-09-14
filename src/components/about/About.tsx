@@ -35,7 +35,7 @@ const About: React.FC = () => {
     <section id="about" className="about-section">
       <Image
         src="/me.jpg"
-        alt="Image of Alex Verheecke"
+        alt="Alex Verheecke"
         className="about-image"
         roundedCircle
         fluid
@@ -71,27 +71,6 @@ const About: React.FC = () => {
               </li>
             </ul>
           </p>
-        </div>
-        <div className="social-links">
-          <a
-            href="https://github.com/hougesen"
-            aria-label="Link to my Github"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="social-link"
-          >
-            {/* Github icon */}
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/mads-hougesen-78733016a/"
-            aria-label="Link to my LinkedIn"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="social-link"
-          >
-            {/* LinkedIn icon */}
-          </a>
         </div>
       </div>
     </section>

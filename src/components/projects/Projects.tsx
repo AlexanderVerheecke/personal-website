@@ -22,7 +22,7 @@ const ProjectCard = ({
       {link ? (
         <a href={link} className="link">
           <div className="project-text">
-            <h2 className="title">{title}</h2>
+            <h3 className="title">{title}</h3>
             <p className="description">{description}</p>
           </div>
 
@@ -44,7 +44,7 @@ const ProjectCard = ({
       ) : (
         <>
           <div className="project-text">
-            <h2 className="title">{title}</h2>
+            <h3 className="title">{title}</h3>
             <p className="description">{description}</p>
           </div>
           <div className="language-tags">

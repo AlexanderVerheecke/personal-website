@@ -17,7 +17,7 @@ function App() {
   return (
     <ColorProvider>
       <Router>
-        <div className="app-container">
+        <main className="app-container">
           <Routes>
             <Route
               path="/"
@@ -38,7 +38,7 @@ function App() {
             <Route path="/old-website" element={<OldWebsite />} />
             {/* <Route path="/game" element={<BouncingBallGame />} /> */}
           </Routes>
-        </div>
+        </main>
       </Router>
     </ColorProvider>
   );
