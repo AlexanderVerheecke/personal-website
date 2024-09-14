@@ -24,7 +24,7 @@ const Employment = () => {
   I am responsible for designing, developing, 
   and testing software components, ensuring high-quality code and adherence to best 
   practices. My role encompasses full-stack development, data engineering, and process 
-  automation across various client projects.
+  automation across various projects.
 `;
 
   const achievements = [

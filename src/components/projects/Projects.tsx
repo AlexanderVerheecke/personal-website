@@ -70,13 +70,13 @@ const Projects = () => {
       description:
         "A static e-commerce website for a private rental business in Indonesia",
       link: "https://balivillamarene.com/home",
-      languages: ["TypeScript", "React", "SupaBase", "Netlify"],
+      languages: ["TypeScript", "Angular", "SupaBase", "Netlify"],
     },
     {
       title: "Media Tracking Application",
       description:
         "An upcoming web application to keep track of your Books, TV Series, Movies, and Games",
-      languages: ["TypeScript", "Angular", "SupaBase", "Netlify"],
+      languages: ["TypeScript", "React", "SupaBase", "Netlify"],
     },
     {
       title: "Old Personal Website",

@@ -10,6 +10,9 @@ import { ColorProvider } from "./ColorContext";
 // import SkillTree from "./components/skills/SkillTree";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import OldWebsite from "./components/oldWebsite/OldWebsite";
+// import Clippy from "./components/clippy/Clippy";
+// import BouncingBallGame from "./components/bouncingBall/BouncingBallGame";
+// import CatchTheCoinGame from "./components/catchTheCoinGame/CatchTheCoinGame";
 function App() {
   return (
     <ColorProvider>
@@ -26,10 +29,14 @@ function App() {
                   <Projects />
                   <Skills />
                   <Contact />
+                  {/* <Clippy /> */}
+                  {/* <BouncingBallGame /> */}
+                  {/* <CatchTheCoinGame /> */}
                 </>
               }
             />
             <Route path="/old-website" element={<OldWebsite />} />
+            {/* <Route path="/game" element={<BouncingBallGame />} /> */}
           </Routes>
         </div>
       </Router>
