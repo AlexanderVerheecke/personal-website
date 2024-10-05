@@ -11,7 +11,7 @@ const Employment = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
+      setIsSmallScreen(window.innerWidth <= 767);
     };
 
     checkScreenSize();
