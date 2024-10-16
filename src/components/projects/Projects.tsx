@@ -73,17 +73,17 @@ const Projects = () => {
       languages: ["TypeScript", "Angular", "SupaBase", "Netlify"],
     },
     {
-      title: "Media Tracking Application",
-      description:
-        "An upcoming web application to keep track of your Books, TV Series, Movies, and Games",
-      languages: ["TypeScript", "React", "SupaBase", "Netlify"],
-    },
-    {
       title: "Old Personal Website",
       description:
         "A previous version of my website before gaining developer experience",
       languages: ["JavaScript", "HTML", "CSS"],
       link: "/old-website",
+    },
+    {
+      title: "Media Tracking Application [WIP]",
+      description:
+        "An upcoming web application to keep track of your Books, TV Series, Movies, and Games",
+      languages: ["TypeScript", "React", "SupaBase", "Netlify"],
     },
   ];
 
