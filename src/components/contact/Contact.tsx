@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import { useColor } from "../../ColorContext";
 import { MapPin } from "lucide-react";
 import "./Contact.scss";
@@ -35,10 +35,21 @@ const Contact = () => {
             in/verheecke
           </a>
         </div>
+        <div className="github">
+          <gith stroke={currentColor} className="icon" />
+          <a
+            href="https://github.com/AlexanderVerheecke"
+            aria-label="Link to GitHub"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            in/verheecke
+          </a>
+        </div>
       </div>
       {/* <div className="flex gap-4">
         <a
-          href="https://github.com/hougesen"
+          href="https://github.com/AlexanderVerheecke"
           aria-label="Link to my Github"
           rel="noreferrer noopener"
           target="_blank"
