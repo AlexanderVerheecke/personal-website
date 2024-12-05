@@ -43,19 +43,10 @@ const Contact = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            github/com/AlexanderVerheecke
+            AlexanderVerheecke
           </a>
         </div>
       </div>
-      {/* <div className="flex gap-4">
-        <a
-          href="https://github.com/AlexanderVerheecke"
-          aria-label="Link to my Github"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-        </a>
-      </div> */}
     </section>
   );
 };
