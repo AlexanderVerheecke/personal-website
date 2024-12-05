@@ -36,14 +36,14 @@ const Contact = () => {
           </a>
         </div>
         <div className="github">
-          <gith stroke={currentColor} className="icon" />
+          <Github stroke={currentColor} className="icon" />
           <a
             href="https://github.com/AlexanderVerheecke"
             aria-label="Link to GitHub"
             rel="noreferrer noopener"
             target="_blank"
           >
-            in/verheecke
+            github/com/AlexanderVerheecke
           </a>
         </div>
       </div>
