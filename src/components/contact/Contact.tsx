@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="location">
           <MapPin stroke={currentColor} className="icon" />
 
-          <span>Leeds, UK</span>
+          <span>Leeds, UK (soon relocating to London)</span>
         </div>
         <div className="linkedin">
           <Linkedin stroke={currentColor} className="icon" />

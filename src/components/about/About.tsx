@@ -55,9 +55,9 @@ const About: React.FC = () => {
         <div className="about-description">
           <p>
             a software developer from the UK. Lover of all things diving,
-            travelling, and the oxford comma. I work at Scott Logic where I
+            travelling, and the Oxford comma. I work at Scott Logic where I
             currently spend most of my time building tools for visual data
-            management.
+            management and enhancing data pipeline workflows.
           </p>
           <p>
             Some projects I've worked on include:
