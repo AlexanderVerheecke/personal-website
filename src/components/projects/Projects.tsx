@@ -70,7 +70,7 @@ const Projects = () => {
       description:
         "A static e-commerce website for a private rental business in Indonesia",
       link: "https://balivillamarene.com/home",
-      languages: ["TypeScript", "Angular", "SupaBase", "Netlify"],
+      languages: ["TypeScript", "React", "SupaBase", "Netlify"],
     },
     {
       title: "Old Personal Website",

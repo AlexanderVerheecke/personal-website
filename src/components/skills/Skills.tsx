@@ -9,7 +9,7 @@ const Skills = () => {
       category: "Languages",
       skills: ["JavaScript", "TypeScript", "Python", "Java"],
     },
-    { category: "Frameworks", skills: ["React", "Angular", "Flask"] },
+    { category: "Frameworks", skills: ["React", "Angular","Next.js", "Flask"] },
     { category: "Databases", skills: ["MySQL", "PostgreSQL", "SupaBase"] },
     { category: "Hosting", skills: ["Heroku", "Netlify"] },
     { category: "Versioning", skills: ["Git", "Liquidbase"] },
