@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useColor } from "../../ColorContext";
 import "./Skills.scss";
@@ -9,7 +11,10 @@ const Skills = () => {
       category: "Languages",
       skills: ["JavaScript", "TypeScript", "Python", "Java"],
     },
-    { category: "Frameworks", skills: ["React", "Angular","Next.js", "Flask"] },
+    {
+      category: "Frameworks",
+      skills: ["React", "Angular", "Next.js", "Flask"],
+    },
     { category: "Databases", skills: ["MySQL", "PostgreSQL", "SupaBase"] },
     { category: "Hosting", skills: ["Heroku", "Netlify"] },
     { category: "Versioning", skills: ["Git", "Liquidbase"] },

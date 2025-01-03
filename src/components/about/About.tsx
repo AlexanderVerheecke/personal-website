@@ -1,4 +1,5 @@
-// About.tsx
+"use client";
+
 import "./About.scss";
 import Image from "react-bootstrap/Image";
 import { useEffect, useCallback } from "react";
@@ -54,23 +55,21 @@ const About: React.FC = () => {
         </h1>
         <div className="about-description">
           <p>
-            a software developer from the UK. Lover of all things diving,
+            a software developer based in London. Lover of all things diving,
             travelling, and the Oxford comma. I work at Scott Logic where I
             currently spend most of my time building tools for visual data
             management and enhancing data pipeline workflows.
           </p>
-          <p>
-            Some projects I've worked on include:
-            <ul>
-              <li>
-                A tool for automatically validating and processing complex data
-              </li>
-              <li>
-                A platform for female artists to showcase their work and connect
-                with companies for collaboration.
-              </li>
-            </ul>
-          </p>
+          <p>Some projects I've worked on include:</p>
+          <ul>
+            <li>
+              A tool for automatically validating and processing complex data
+            </li>
+            <li>
+              A platform for female artists to showcase their work and connect
+              with companies for collaboration.
+            </li>
+          </ul>
         </div>
       </div>
     </section>

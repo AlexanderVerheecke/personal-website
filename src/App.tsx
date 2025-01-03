@@ -1,3 +1,4 @@
+"use client";
 import "./App.scss";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";

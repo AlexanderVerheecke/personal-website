@@ -22,7 +22,6 @@ export const getColorForLanguage = (language: string): string => {
 
     case "jupyter":
       return "#b06300";
-    // return "#e99c0e";
     case "java":
       return "#B93776";
     case "flask":

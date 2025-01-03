@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import "./Employement.scss";
 import { Briefcase, Award, ChevronRight } from "lucide-react";
@@ -40,6 +42,7 @@ const Employment = () => {
     "Python",
     "Flask",
     "Jupyter",
+    "NextJS",
     "React",
     "TypeScript",
     "Java",
